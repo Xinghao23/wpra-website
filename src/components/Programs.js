@@ -3,7 +3,7 @@ import React from 'react';
 import programA from "../img/IntroToVEX.jpg";
 
 const Programs = () => {
-  // Sample programs data
+  // Programs 
   const programs = [
     { id: 1, title: 'Program A', description: 'Description of Program A.', imageUrl: programA, },
     { id: 2, title: 'Program B', description: 'Description of Program B.' , imageUrl: programA,},
