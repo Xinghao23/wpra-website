@@ -7,6 +7,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Programs from './components/Programs';
 import Contact from './components/Contact';
+import AwardsPage from './components/AwardsPage';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/About" element={<About/>}/>
+          <Route path="/AwardsPage" element={<AwardsPage/>}/>
         </Routes>
         <Footer />
       </div>

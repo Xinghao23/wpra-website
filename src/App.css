@@ -149,52 +149,146 @@ a:hover {
 /* FOR PROGRAMS */
 /* src/components/Programs.css */
 .programs-container {
-  padding: 40px 20px; /* Increased padding for better spacing */
+  padding: 40px 20px;
   text-align: center;
-  background-color: #f0f0f0; /* Light background for the entire container */
-}
-
-.programs-grid {
+  background-color: #f0f0f0;
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: center; /* Center the items */
-  gap: 30px; /* Space between items */
-  margin-top: 20px; /* Margin above the grid */
+  flex-direction: column; /* Align title and grid vertically */
+  align-items: center;
+  justify-content: center; /* Centers the content horizontally */
+}
+.programs-title {
+  font-size: 2rem; /* Larger font for emphasis */
+  color: #333;
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center;
+}
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Space between items */
+  max-width: 1500px; /* Constrain the grid width */
+  width: 100%;
+  margin-top: 20px;
 }
 
 .program-card {
-  background-color: #ffffff; /* Card background color */
-  border: 1px solid #ddd; /* Light border around the cards */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Inner padding */
-  width: 250px; /* Adjusted fixed width for cards */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
-  text-align: left; /* Align text to the left */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
 }
+
 .program-card:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .program-image {
-  width: 100%; /* Responsive image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Match the card's border radius */
-  margin-bottom: 15px; /* Space below the image */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .program-card h2 {
-  font-size: 1.5rem; /* Increase font size for titles */
-  margin: 10px 0; /* Space above and below titles */
-  color: #333; /* Darker color for better readability */
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+  height: 60px; /* Fixed height for consistent alignment */
 }
 
 .program-card p {
-  font-size: 1rem; /* Font size for descriptions */
-  color: #666; /* Lighter color for descriptions */
-  line-height: 1.5; /* Improve readability */
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  min-height: 60px; /* Ensures consistent space for descriptions */
+  margin-top: 0;
 }
+
+/* Responsive layout for tablets */
+@media (max-width: 992px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 576px) {
+  .programs-grid {
+    grid-template-columns: 1fr; /* One column on small screens */
+  }
+}
+
+
+/* AWARDS PAGE*/
+.awards-container {
+  display: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjusts the height of the container */
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.background-video-awards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the entire background */
+  z-index: -1; /* Places video behind the content */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black color with 50% opacity */
+  z-index: -1; /* Places the overlay between the video and the content */
+}
+.awards-content {
+  position: relative;
+  z-index: 1; /* Ensures awards content is on top of the video */
+  color: #fff; /* Light color for text to stand out on video */
+  text-align: center;
+}
+
+.awards-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.award-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+}
+
+.award-card h2 {
+  font-size: 1.5rem;
+}
+
+.award-card p {
+  font-size: 1rem;
+}
+
 /*FOOTER*/
 .footer {
   display: flex;
