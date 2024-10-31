@@ -224,15 +224,13 @@ a:hover {
 }
 
 
-/* AWARDS PAGE*/
 .awards-container {
-  display: relative;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; /* Adjusts the height of the container */
-  position: relative;
+  min-height: 80vh;
   width: 100%;
-  height: 35vh;
   overflow: hidden;
 }
 
@@ -242,22 +240,24 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures video covers the entire background */
-  z-index: -1; /* Places video behind the content */
+  object-fit: cover;
+  z-index: -1;
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Black color with 50% opacity */
-  z-index: -1; /* Places the overlay between the video and the content */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
+
 .awards-content {
   position: relative;
-  z-index: 1; /* Ensures awards content is on top of the video */
-  color: #fff; /* Light color for text to stand out on video */
+  z-index: 1;
+  color: #fff;
   text-align: center;
 }
 
@@ -266,29 +266,99 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.awards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.awards-column {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.award-card {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+/* Styling for each award box */
+.award-box {
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   padding: 20px;
   text-align: left;
+  color: #333;
+  width: 100%; /* Full width within the container */
 }
 
-.award-card h2 {
+.award-box h2 {
   font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.award-card p {
+.award-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.award-box li {
   font-size: 1rem;
+  margin-bottom: 8px;
+}
+/* ABOUT PAGE */ 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.row {
+  display: flex;
+  justify-content: center; /* Centers the row */
+  gap: 20px; /* Ensures equal spacing between boxes */
+  margin-bottom: 20px;
+}
+
+.person-box {
+  width: 350px; /* Fixed width for uniform size */
+  min-height: 550px; /* Adjusted min-height to accommodate title */
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 200px; /* Consistent photo size */
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #555;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.4;
+  max-height: 4.2em; /* Limits height for approximately 3 lines of text */
+  overflow: hide; /* Hides overflow text */
+  display: -webkit-box; /* Required for line clamping */
+}
 /*FOOTER*/
 .footer {
   display: flex;
