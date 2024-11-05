@@ -2,29 +2,58 @@
 import React from 'react';
 import backgroundVideo from '../video/awardsVideo.mp4';
 
-const awardsDataHighStakes = [
-  { title: 'Minnesota Signature Event Build Award', team: "886W", description: 'Aaron, Ethan, Thomas'  },
-  { title: 'WPRA V5RC High Stakes Early Season Qualifier Excellence Award', team: "886W", description: 'Aaron, Ethan, Thomas'  },
-  { title: 'WPRA V5RC High Stakes Early Season Qualifier Tournament Champion', team: "886W", description: 'Aaron, Ethan, Thomas'  },
-  { title: 'WPRA V5RC High Stakes Early Season Qualifier Tournament Finalist', team: "77174B", description: 'Alan, Allan, Oscar, Wilson'  },
-  { title: 'WPRA V5RC High Stakes Early Season Qualifier Create Award', team: "886S", description: 'Aaron, Braden, Jimmy, Victoria'  },
-  { title: 'WPRA V5RC High Stakes Early Season Qualifier Judges Award', team: "886U", description: 'Andre, Justin, Kendrick'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Tournament Champion', team: "886W", description: 'Aaron, Ethan, Thomas'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Excellence Award', team: "886W", description: 'Aaron, Ethan, Thomas'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Robot Skills Champion', team: "886W", description: 'Aaron, Ethan, Thomas'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Tournament Finalist', team: "886R", description: 'Eddie, Laurence, Tina'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Design Award', team: "886R", description: 'Eddie, Laurence, Tina'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Innovative', team: "886Z", description: 'Evan, Julianne, Sharon'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Create Award', team: "77174B", description: 'Alan, Allan, Oscar, Wilson'  },
-  { title: 'WPRA V5RC High Stakes Season Opener Judges Award', team: "886Y", description: 'Alan, Ariel, Mo'  },
-  { title: 'WPRA V5RC High Stakes Halloween Qualifier Tournament Champion', team: "886Y", description: 'Alan, Ariel, Mo'  },
-  { title: 'WPRA V5RC High Stakes Halloween Qualifier Tournament Finalist', team: "886S", description: 'Eddie, Laurence, Tina'  },
-  { title: 'WPRA V5RC High Stakes Halloween Qualifier Design Award', team: "886Y", description: 'Alan, Ariel, Mo'  },
-  { title: 'WPRA V5RC High Stakes Halloween Qualifier Innovate Award', team: "886R", description: 'Eddie, Laurence, Tina'  },
-  { title: 'WPRA V5RC High Stakes Halloween Qualifier Judges Award', team: "886S", description: 'Aaron, Braden, Jimmy, Victoria'  },
+const awardsDataHighStakes1 = {
+  "Minnesota Signature Event": [
+    { title: 'Build Award', team: "886W", members: ['Aaron', 'Ethan', 'Thomas'] },
+  ],
+"WPRA Early Season Summer Qualifier": [
+    { title: 'Excellence Award', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Tournament Champion', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Tournament Finalist', team: "77174B", members: ['Alan, Allan, Oscar, Wilson'] },
+    { title: 'Create Award', team: "886S", members: ['Aaron, Braden, Jimmy, Victoria'] },
+   { title: 'Judges Award', team: "886U", members: ['Andre, Justin, Kendrick'] },
+  ],
+  "WPRA V5RC High Stakes Season Opener": [
+    { title: 'Tournament Champion', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Excellence Award', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Robot Skills Champion', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Tournament Finalist', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    { title: 'Design Award', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    { title: 'Innovative Award', team: "886Z", members: ['Evan, Julianne, Sharon'] },
+    { title: 'Create Award', team: "77174B", members: ['Alan, Allan, Oscar, Wilson'] },
+    { title: 'Judges Award', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    // ... add more awards for this season as needed
+  ],
+  "WPRA V5RC High Stakes Halloween Qualifier": [
+    { title: 'Tournament Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Tournament Finalist', team: "886S", members: ['Aaron, Braden, Jimmy, Victoria'] },
+    { title: 'Design Award', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Innovate Award', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    { title: 'Judges Award', team: "886S", members: ['Aaron, Braden, Jimmy, Victoria'] },
+    // ... add more awards for this season as needed
+  ],
+  "PYRS Season Opener Qualifier": [
+    { title: 'Tournament Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Tournament Champion', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    { title: 'Build Award', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    // ... add more awards for this season as needed
+  ]
 
   // Add more awards here as needed
-];
+}
+
+const awardsDataOverUnder1 = {
+  "WPRA Early Season Summer Qualifier": [
+      { title: 'Design Award', team: "886N", members: ['Alan', 'Braden'] },
+      { title: 'Create Award', team: "886A", members: ['Eddie', 'Simone', 'Oscar'] },
+    ],
+    "WPRA Season Opener Qualifier": [
+      { title: 'Build Award', team: "886Z", members: ['Evan', 'Hubert', 'Jun', 'William', 'Sharon'] },
+      // ... add more awards for this season as needed
+    ]
+  
+    // Add more awards here as needed
+  }
 const awardsDataOverUnder = [
   { title: 'WPRA Early Season Summer Qualifier Design Award', team: "886N", description: 'Alan, Braden'},
   { title: 'WPRA Early Season Summer Qualifier Create Award', team: "886A", description: 'Eddie, Simone, Oscar'},
@@ -87,29 +116,39 @@ const AwardsPage = () => {
       <div className="overlay"></div>
       <div className="awards-content">
         <h1 className="awards-title">Our Awards</h1>
-        <div className="awards-column">
-          {/* Box 1 */}
-          <div className="award-box">
-            <h2>VEX VRC High Stakes Season</h2>
-            <ul>
-              {awardsDataHighStakes.map((award, idx) => (
-                <li key={idx}>
-                  <strong>{award.title} ({award.team}):</strong> {award.description}
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Box 2 */}
-          <div className="award-box">
-            <h2>VEX VRC Over Under Season</h2>
-            <ul>
-              {awardsDataOverUnder.map((award, idx) => (
-                <li key={idx}>
-                  <strong>{award.title} ({award.team}):</strong> {award.description}
-                </li>
-              ))}
-            </ul>
-          </div>
+        
+        {/* First Box for High Stakes Season */}
+        <div className="award-box">
+          <h2>VEX VRC High Stakes Season</h2>
+          {Object.entries(awardsDataHighStakes1).map(([season, awards], idx) => (
+            <div key={idx}>
+              <h3>{season}</h3>
+              <ul>
+                {awards.map((award, index) => (
+                  <li key={index}>
+                    <strong>{award.title} ({award.team}):</strong> {award.members.join(', ')}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        
+        {/* Second Box for Over Under Season */}
+        <div className="award-box">
+          <h2>VEX VRC Over Under Season</h2>
+          {Object.entries(awardsDataOverUnder1).map(([season, awards], idx) => (
+            <div key={idx}>
+              <h3>{season}</h3>
+              <ul>
+                {awards.map((award, index) => (
+                  <li key={index}>
+                    <strong>{award.title} ({award.team}):</strong> {award.members.join(', ')}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>

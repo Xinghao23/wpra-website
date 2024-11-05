@@ -19,6 +19,22 @@ function Home() {
           <Link to="/programs" className="learn-more-btn">Get Started</Link>
       </div>
       <FloatingButton />
+       {/* New Section for YouTube Video Embed */}
+       <section className="youtube-section">
+        <h2 className="youtube-title">Watch Our Introduction Video</h2>
+        <div className="youtube-video">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/I1xfAxlaTgo?si=Q2WjEmDQIZyoKVwZ" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen>
+          </iframe>
+        </div>
+      </section>
     </div>
   );
 }

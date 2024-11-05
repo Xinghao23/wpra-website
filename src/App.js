@@ -8,6 +8,7 @@ import About from './components/About';
 import Programs from './components/Programs';
 import Contact from './components/Contact';
 import AwardsPage from './components/AwardsPage';
+import Gallery from './components/Gallery';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/About" element={<About/>}/>
           <Route path="/AwardsPage" element={<AwardsPage/>}/>
+          <Route path="/gallery" element={<Gallery />} /> {/* Gallery route */}
         </Routes>
         <Footer />
       </div>
