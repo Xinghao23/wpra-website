@@ -153,7 +153,7 @@ const AwardsPage = () => {
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="overlay"></div>
+      <div className="overlayAwards"></div>
       <div className="awards-content">
         <h1 className="awards-title">Our Awards</h1>
         

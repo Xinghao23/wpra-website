@@ -5,12 +5,14 @@
 }
 
 /* THIS IS FOR THE HEADER PAGE*/
-header {
+/* Header Styling */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background-color: #282c34; /* Change this to your desired color */
+  background-color: #282c34;
+  position: relative;
 }
 
 .logo-container {
@@ -19,36 +21,100 @@ header {
 }
 
 .logo {
-  height: 60px; /* Adjust the height of your logo */
-  margin-right: 20px; /* Space between logo and site name */
+  height: 60px;
+  margin-right: 20px;
 }
 
 .site-name {
-  color: white; /* Adjust text color */
-  font-size: 2em; /* Adjust font size */
+  color: white;
+  font-size: 1.5em;
 }
 
+/* Default Navigation Menu */
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 15px;
-  font-size: 1.5em;
-  margin-right: 50px;
 }
 
-a {
+nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px 20px;
+  font-size: 1.5em;
+  transition: background-color 0.3s, color 0.3s;
 }
-a:hover {
 
+nav ul li a:hover {
   background-color: red;
+  color: white;
+  border-radius: 4px;
 }
+
+/* Mobile Menu Styling */
+.mobile-menu-icon {
+  display: none;
+  font-size: 2em;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide nav on mobile by default */
+.nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* Show hamburger icon on mobile */
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  /* Hide the nav by default */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #282c34;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Show the nav when the menu is open */
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 1.5em;
+  }
+}
+
+
 /* ---------HOME CONTAINER--------- */
 /* Home container styling */
 .home-container {
@@ -77,13 +143,13 @@ a:hover {
 
 /* Overlay styling */
 .overlay {
-  position: flex;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Keep overlay fixed over the video */
-  background-color: rgba(0, 0, 0, 0.6); /* Adds a dark overlay for readability */
-  z-index: -2;
+  height: 140%; /* Keep overlay fixed over the video */
+  background-color: rgba(0, 0, 0, 0.9); /* Adds a dark overlay for readability */
+  z-index: -1;
 }
 
 /* Main content styling within the background section */
@@ -92,7 +158,7 @@ a:hover {
   z-index: 1;
   text-align: center;
   color: #fff;
-  padding-top: 10vh; /* Start content down from top */
+  padding-top: 20vh; /* Start content down from top */
   padding-bottom: 40vh; /* Adds space at the bottom of the section to push other sections further down */
 }
 
@@ -276,13 +342,13 @@ a:hover {
   z-index: -1;
 }
 
-.overlay {
+.overlayAwards {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
 
@@ -522,7 +588,7 @@ a:hover {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 12px; /* space between icon and text */
+  gap: 2px; /* space between icon and text */
   padding: 12px 20px;
   margin: 10px 0;
   border-radius: 6px;

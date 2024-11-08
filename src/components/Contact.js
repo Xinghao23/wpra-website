@@ -29,7 +29,7 @@ const ContactPage = () => {
               </a>
             </li>
             <li onClick={() => openModal('wechat')}>
-              <FontAwesomeIcon icon={faWeixin} className="contact-icon" /> <strong>WeChat:</strong> Click to view
+              <FontAwesomeIcon icon={faWeixin} className="contact-icon" /> <strong>WeChat:</strong> Click to view QR code
             </li>
             <li>
               <a href="https://www.linkedin.com/company/orionwpra/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="contact-link">
