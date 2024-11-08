@@ -46,8 +46,7 @@ a {
   padding: 10px;
 }
 a:hover {
-  text-decoration: underline; 
-  text-decoration-color: white;
+
   background-color: red;
 }
 /* ---------HOME CONTAINER--------- */
@@ -529,15 +528,25 @@ a:hover {
   border-radius: 6px;
   background-color: #f0f8ff;
   transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
 }
 
 .contact-list li:hover {
-  background-color: #e7f3ff;
-  color: #005bb5;
+  background-color: #0073e6; /* Change background on hover */
+  color: white; /* Change text to white on hover */
 }
 
 .contact-list li:hover .contact-icon {
-  color: #005bb5;
+  color: white; /* Change icon color to white on hover */
+}
+
+.contact-list li a {
+  color: inherit; /* Inherit color from list item */
+  text-decoration: none;
+}
+
+.contact-list li a:hover {
+  color: white; /* Change link text to white on hover */
 }
 
 /* Contact Icons */
@@ -552,17 +561,67 @@ a:hover {
 button {
   padding: 12px 25px;
   margin-top: 20px;
-  background-color: #0073e6;
-  color: white;
-  border: none;
+  background-color: transparent; /* Default transparent background */
+  color: #0073e6; /* Default blue text */
+  border: 2px solid #0073e6;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
 }
 
 button:hover {
-  background-color: #005bb5;
+  background-color: #0073e6; /* Blue background on hover */
+  color: white; /* White text on hover */
+  border: 2px solid #0073e6;
+}
+
+/* WeChat Thumbnail Styling */
+.wechat-thumbnail {
+  width: 420px;
+  height: 600px;
+  margin-right: 8px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* WeChat Modal Styling */
+.wechat-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-width: 90%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Close button for modal */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  color: #333;
+}
+
+.wechat-image {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
 }
 
 /* Responsive Adjustments */
@@ -579,7 +638,6 @@ button:hover {
     font-size: 1rem;
   }
 }
-
 
 @media (max-width: 768px) {
   .contact-container {

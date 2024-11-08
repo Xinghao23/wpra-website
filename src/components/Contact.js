@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import { faWeixin, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import wechat from '../img/wechat.png';
+import { faWeixin, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import wechatQR from '../img/wechat.png';
 
 Modal.setAppElement('#root');
 
@@ -41,6 +41,11 @@ const ContactPage = () => {
                 <FontAwesomeIcon icon={faFacebook} className="contact-icon" /> <strong>Facebook:</strong> Visit our Facebook page
               </a>
             </li>
+            <li>
+              <a href="https://www.instagram.com/orion_wpra/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <FontAwesomeIcon icon={faInstagram} className="contact-icon" /> <strong>Instagram:</strong> Visit our Instagram page
+              </a>
+            </li>
           </ul>
         </section>
 
@@ -72,7 +77,7 @@ const ContactPage = () => {
       <Modal isOpen={modalIsOpen.wechat} onRequestClose={() => closeModal('wechat')} contentLabel="WeChat Modal">
         <h2>WeChat</h2>
         <p>Scan the QR code below to connect on WeChat:</p>
-        <img src= "../img/wechat.png" alt="WeChat QR Code" style={{ width: '200px', height: '200px' }} />
+        <img src={wechatQR} alt="WeChat QR Code" className="wechat-thumbnail"  /> 
         <button onClick={() => closeModal('wechat')}>Close</button>
       </Modal>
 
@@ -92,6 +97,14 @@ const ContactPage = () => {
           Facebook Page
         </a>
         <button onClick={() => closeModal('facebook')}>Close</button>
+      </Modal>
+      <Modal isOpen={modalIsOpen.instagram} onRequestClose={() => closeModal('instagram')} contentLabel="Instagram Modal">
+        <h2>Instagram</h2>
+        <p>Visit our Instagram Page:</p>
+        <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">
+          Instagram Page
+        </a>
+        <button onClick={() => closeModal('instagram')}>Close</button>
       </Modal>
     </div>
   );
