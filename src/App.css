@@ -268,7 +268,7 @@ a:hover {
 }
 
 .background-video-awards {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -432,6 +432,170 @@ a:hover {
 
 .gallery-image:hover {
   transform: scale(1.05);
+}
+
+/* THIS IS FOR THE CONTACTS PAGE */
+/* General Styling */
+.contact-page {
+  padding: 30px;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.contact-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-page p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Flex container for two columns */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-direct,
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-direct {
+  margin-right: 20px;
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 8px;
+}
+
+.contact-direct h2,
+.contact-form h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Embedded Form Styling */
+.contact-form iframe {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 600px;
+}
+
+/* Contact List */
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  cursor: pointer;
+  color: #0073e6;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-list li:hover {
+  background-color: #e7f3ff;
+  color: #005bb5;
+}
+
+.contact-list li:hover .contact-icon {
+  color: #005bb5;
+}
+
+/* Contact Icons */
+.contact-icon {
+  font-size: 1.6rem;
+  color: #0073e6;
+  flex-shrink: 0; /* prevent icon from shrinking */
+  transition: color 0.3s ease;
+}
+
+/* Modal Button */
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-page p {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-direct,
+  .contact-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-page h1 {
+    font-size: 2rem;
+  }
 }
 
 /*FOOTER*/
