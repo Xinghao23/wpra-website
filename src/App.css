@@ -258,8 +258,14 @@ nav ul li a:hover {
 .programs-title {
   font-size: 2rem; /* Larger font for emphasis */
   color: #333;
-  margin-bottom: 20px; /* Space below the title */
+  margin-bottom: 10px; /* Space below the title */
   text-align: center;
+}
+.program-subtitle {
+  font-size: 0.9rem; /* Slightly smaller than the description */
+  color: #555; /* Dark gray for better visibility */
+  margin-bottom: 5px; /* Space between subtitle and description */
+  font-style: italic;
 }
 .programs-grid {
   display: grid;
@@ -463,48 +469,174 @@ nav ul li a:hover {
 
 
 /*GALLERY CSS */
-.gallery-container {
-  padding: 20px;
+/* General Styles */
+.gallery-page {
+  padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .gallery-title {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  text-align: center;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+.gallery-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
 }
 
-.gallery-item {
+/* Section Styles */
+.gallery-section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #0073e6;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Horizontal Scrolling */
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.image-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
+  flex: 1;
+}
+
+.image-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.image-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #0073e6;
+  border-radius: 10px;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  width: 300px;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.image-container:hover {
+  transform: scale(1.05);
 }
 
 .gallery-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
-.gallery-image:hover {
-  transform: scale(1.05);
+/* Scroll Buttons */
+.scroll-button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
+
+.scroll-button:hover {
+  background-color: #005bb5;
+}
+
+.scroll-button.left {
+  margin-right: 10px;
+}
+
+.scroll-button.right {
+  margin-left: 10px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 0;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  background-color: #005bb5;
+}
+
 
 /* THIS IS FOR THE CONTACTS PAGE */
 /* General Styling */
+/* Form Styling */
 .contact-page {
   padding: 30px;
-  max-width: 100%;
-  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -532,8 +664,8 @@ nav ul li a:hover {
 .contact-container {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact-direct,
@@ -544,34 +676,6 @@ nav ul li a:hover {
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.contact-direct {
-  margin-right: 20px;
-}
-
-.contact-form h2 {
-  font-size: 1.8rem;
-  color: #555;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0073e6;
-  padding-bottom: 8px;
-}
-
-.contact-direct h2,
-.contact-form h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* Embedded Form Styling */
-.contact-form iframe {
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 600px;
 }
 
 /* Contact List */
@@ -588,185 +692,241 @@ nav ul li a:hover {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 2px; /* space between icon and text */
+  gap: 8px;
   padding: 12px 20px;
   margin: 10px 0;
   border-radius: 6px;
   background-color: #f0f8ff;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none;
 }
 
 .contact-list li:hover {
-  background-color: #0073e6; /* Change background on hover */
-  color: white; /* Change text to white on hover */
+  background-color: #0073e6;
+  color: white;
 }
 
 .contact-list li:hover .contact-icon {
-  color: white; /* Change icon color to white on hover */
+  color: white;
 }
 
 .contact-list li a {
-  color: inherit; /* Inherit color from list item */
-  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove the underline */
 }
 
 .contact-list li a:hover {
-  color: white; /* Change link text to white on hover */
+  color: white; /* Change text to white on hover */
+  text-decoration: none; /* Ensure underline is not added on hover */
 }
 
 /* Contact Icons */
 .contact-icon {
   font-size: 1.6rem;
   color: #0073e6;
-  flex-shrink: 0; /* prevent icon from shrinking */
+  flex-shrink: 0;
   transition: color 0.3s ease;
 }
 
-/* Modal Button */
-button {
-  padding: 12px 25px;
-  margin-top: 20px;
-  background-color: transparent; /* Default transparent background */
-  color: #0073e6; /* Default blue text */
-  border: 2px solid #0073e6;
-  border-radius: 5px;
+
+/* Form Styling */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none;
 }
 
-button:hover {
-  background-color: #0073e6; /* Blue background on hover */
-  color: white; /* White text on hover */
-  border: 2px solid #0073e6;
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* WeChat Thumbnail Styling */
-.wechat-thumbnail {
-  width: 420px;
-  height: 600px;
-  margin-right: 8px;
-  border-radius: 4px;
-  object-fit: cover;
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
 }
 
-/* WeChat Modal Styling */
-.wechat-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  max-width: 90%;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  z-index: 1000;
-}
-
-/* Close button for modal */
-.modal-close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
+.submit-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0073e6;
   border: none;
-  font-size: 1.5rem;
-  color: #555;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005bb5;
+}
+.form-success {
+  color: green;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Modal Styling */
+.wechat-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.wechat-thumbnail {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.modal-close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .modal-close-button:hover {
-  color: #333;
-}
-
-.wechat-image {
-  max-width: 100%;
-  height: auto;
-  margin: 15px 0;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1200px) {
-  .contact-container {
-    gap: 20px;
-  }
-
-  .contact-page h1 {
-    font-size: 2.2rem;
-  }
-
-  .contact-page p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact-direct,
-  .contact-form {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .contact-page h1 {
-    font-size: 2rem;
-  }
+  background-color: #005bb5;
 }
 
 /*FOOTER*/
-.footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #000000;
+/* Footer Link Styling */
+.footer-link {
+  text-decoration: none;
+  color: red;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
   color: white;
+}
+
+/* Other footer styles remain the same */
+
+/* General Footer Styling */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  gap: 40px;
+}
+
+.contact-section {
+  flex: 1;
   text-align: left;
 }
 
-.footer-section {
-  flex: 1;
-  margin: 0 10px;
+.contact-section p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
 }
 
-.footer-section h3 {
+.contact-icon {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.social-section {
+  flex: 1;
+  text-align: right;
+}
+
+.social-section h2 {
+  color: red;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
-.footer-section ul li {
-  margin: 5px 0;
-}
-
-.footer-section ul li a {
-  color: #bbb;
+.social-link {
   text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-  text-decoration: underline;
-  color: #fff;
+.social-link:hover {
+  color: red;
+  transform: scale(1.1);
 }
 
-.social-icons a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #bbb;
-  text-decoration: none;
+.icon {
+  font-size: 2rem;
 }
 
-.social-icons a:hover {
-  color: #fff;
+.footer-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .contact-section,
+  .social-section {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }
