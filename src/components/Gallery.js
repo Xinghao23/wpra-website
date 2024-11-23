@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import club1 from '../img/886Y.JPG';
 import club2 from '../img/886Y.JPG';
 import club3 from '../img/886Y.JPG';
-import competition1 from '../img/886Y.JPG';
-import competition2 from '../img/886Y.JPG';
-import competition3 from '../img/886Y.JPG';
-import competition4 from '../img/886Y.JPG';
+import competition1 from '../img/886W Salish.JPG';
+import competition2 from '../img/886Y Salish.JPG';
+import competition3 from '../img/Champ Salish.JPG';
+import competition4 from '../img/Champ Seaquam.JPG';
+import competition5 from '../img/Finalist Salish.JPG';
 import award1 from '../img/886Y.JPG';
 import award2 from '../img/886Y.JPG';
 import award3 from '../img/886Y.JPG';
@@ -33,6 +34,7 @@ const GalleryPage = () => {
         { src: competition2, alt: 'Competition 2' },
         { src: competition3, alt: 'Competition 3' },
         { src: competition4, alt: 'Competition 4' },
+        { src: competition5, alt: 'Competition 5' },
       ],
       description: 'Showcasing moments from exciting competitions, where students test their skills and teamwork.',
     },
