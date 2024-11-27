@@ -1,6 +1,7 @@
 // src/components/Award.jsbicycle presta schrader valve adapter bike pumps adatper football pumps
 import React from 'react';
 import backgroundVideo from '../video/awardsVideo.mp4';
+import FloatingButton from '../components/FloatingButton';
 
 const awardsDataHighStakes1 = {
   "Minnesota Signature Event": [
@@ -191,6 +192,7 @@ const AwardsPage = () => {
           ))}
         </div>
       </div>
+      <FloatingButton />
     </div>
   );
 };

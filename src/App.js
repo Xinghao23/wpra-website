@@ -9,6 +9,8 @@ import Programs from './components/Programs';
 import Contact from './components/Contact';
 import AwardsPage from './components/AwardsPage';
 import Gallery from './components/Gallery';
+import Blog from './components/Blog';
+import BlogPost from './components/BlogPost'; // Individual blog post component
 import './App.css';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route path="/About" element={<About/>}/>
           <Route path="/AwardsPage" element={<AwardsPage/>}/>
           <Route path="/gallery" element={<Gallery />} /> {/* Gallery route */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
         <Footer />
       </div>

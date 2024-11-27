@@ -1,5 +1,6 @@
 // src/components/About.js
 import React from 'react';
+import FloatingButton from '../components/FloatingButton';
 import Xinghao from "../img/XinghaoHS.JPG";
 import Nevin from "../img/NevinHS.JPG";
 import Winson from "../img/WinsonHS.JPG";
@@ -84,6 +85,7 @@ const About = () => {
                   </div>
               ))}
           </div>
+          <FloatingButton />
       </div>
   );
 };

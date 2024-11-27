@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import FloatingButton from '../components/FloatingButton';
 
 // Static image imports
-import club1 from '../img/886Y.JPG';
-import club2 from '../img/886Y.JPG';
+import club1 from '../img/comp3.jpg';
+import club2 from '../img/886N.jpg';
 import club3 from '../img/886Y.JPG';
-import competition1 from '../img/886W Salish.JPG';
-import competition2 from '../img/886Y Salish.JPG';
-import competition3 from '../img/Champ Salish.JPG';
-import competition4 from '../img/Champ Seaquam.JPG';
-import competition5 from '../img/Finalist Salish.JPG';
-import award1 from '../img/886Y.JPG';
-import award2 from '../img/886Y.JPG';
-import award3 from '../img/886Y.JPG';
+import awards1 from '../img/886W Salish.JPG';
+import awards2 from '../img/886Y Salish.JPG';
+import awards3 from '../img/Champ Salish.JPG';
+import awards4 from '../img/Champ Seaquam.JPG';
+import awards5 from '../img/Finalist Salish.JPG';
+import competition1 from '../img/Mecha1.jpg';
+import competition2 from '../img/Mecha2.jpg';
+import competition3 from '../img/Mecha3.jpg';
 
 const GalleryPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Tracks modal visibility
@@ -19,7 +20,7 @@ const GalleryPage = () => {
 
   const sections = [
     {
-      title: 'Club Environment',
+      title: 'Competitions',
       images: [
         { src: club1, alt: 'Club Environment 1' },
         { src: club2, alt: 'Club Environment 2' },
@@ -28,22 +29,22 @@ const GalleryPage = () => {
       description: 'Explore the vibrant and collaborative club atmosphere where members design, build, and program robots.',
     },
     {
-      title: 'Competitions',
+      title: 'Awards & Achievements',
       images: [
-        { src: competition1, alt: 'Competition 1' },
-        { src: competition2, alt: 'Competition 2' },
-        { src: competition3, alt: 'Competition 3' },
-        { src: competition4, alt: 'Competition 4' },
-        { src: competition5, alt: 'Competition 5' },
+        { src: awards1, alt: 'Award 1' },
+        { src: awards2, alt: 'Award 2' },
+        { src: awards3, alt: 'Award 3' },
+        { src: awards4, alt: 'Award 4' },
+        { src: awards5, alt: 'Award 5' },
       ],
       description: 'Showcasing moments from exciting competitions, where students test their skills and teamwork.',
     },
     {
-      title: 'Awards & Achievements',
+      title: 'Academy Environment',
       images: [
-        { src: award1, alt: 'Award 1' },
-        { src: award2, alt: 'Award 2' },
-        { src: award3, alt: 'Award 3' },
+        { src: competition1, alt: 'Competition 1' },
+        { src: competition2, alt: 'Competition 2' },
+        { src: competition3, alt: 'Competition 3' },
       ],
       description: 'Celebrating our proudest accomplishments, recognizing excellence in robotics and teamwork.',
     },
@@ -109,6 +110,7 @@ const GalleryPage = () => {
           </div>
         </div>
       )}
+      <FloatingButton />
     </div>
   );
 };

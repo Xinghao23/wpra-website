@@ -25,6 +25,7 @@ function Header() {
           <li><Link to="/Programs" onClick={() => setIsMobileMenuOpen(false)}>Programs</Link></li>
           <li><Link to="/AwardsPage" onClick={() => setIsMobileMenuOpen(false)}>Awards</Link></li>
           <li><Link to="/Gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link></li>
+          <li><Link to="/Blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link></li>
         </ul>
       </nav>
       <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
