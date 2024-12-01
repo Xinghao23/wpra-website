@@ -21,7 +21,7 @@ function Home() {
       <FloatingButton />
        {/* New Section for YouTube Video Embed */}
        <section className="youtube-section">
-        <h2 className="youtube-title">Watch Our Introduction Video</h2>
+        <h2 className="youtube-title">Wondering what a large scale competition is like?</h2>
         <div className="youtube-video">
           <iframe 
             width="560" 

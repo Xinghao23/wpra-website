@@ -1,11 +1,15 @@
 // src/components/About.js
 import React from 'react';
 import FloatingButton from '../components/FloatingButton';
-import programA from "../img/early.JPG";
-import programB from "../img/886R.JPG"
-import programE from "../img/3DPRINT.JPG"
-import programD from "../img/886Y.JPG"
-import programC from "../img/886S.JPG"
+import programB from "../img/DSC_0960.JPG";
+import programA from "../img/EarlyLearning.JPG";
+import programE from "../img/3DModeling.JPG";
+import programD from "../img/DSC_0471.JPG";
+import programC from "../img/earlySeason.JPG";
+import programG from "../img/DSC_0342.JPG";
+import programF from "../img/DSC_0345.JPG";
+import programH from "../img/DSC_0352.JPG";
+
 
 const Programs = () => {
   // Programs 
@@ -50,21 +54,21 @@ const Programs = () => {
       title: 'Robotics Programming',
       subtitle: 'For ages 12-18', 
       description: 'Robotics Programming focuses on embedded programming using C++, where students learn to implement control algorithms such as PID control, bang-bang control, and motion control. Through hands-on coding, they’ll optimize robot performance for tasks like precise movement, object manipulation, and environmental navigation, gaining a deep understanding of robotics systems and programming logic.' , 
-      imageUrl: programA,
+      imageUrl: programF,
     },
     { 
       id: 7, 
       title: 'Programming - Intro', 
       subtitle: 'For ages 12-15',
       description: 'Introduces students to the fundamentals of coding using Python, a beginner-friendly yet powerful language. Students will learn key concepts such as variables, loops, functions, and conditionals, applying their skills to fun projects like simple games, calculators, and data visualizations.', 
-      imageUrl: programA, 
+      imageUrl: programG, 
     },
     { 
       id: 8, 
       title: 'Programming - Intermidate', 
       subtitle: 'For ages 15-18',
       description: 'Teaches the foundations of C++, a versatile language widely used in software and robotics. Students will explore concepts like syntax, loops, arrays, and object-oriented programming, building practical projects such as number guessers, mini-games, and basic simulations.', 
-      imageUrl: programA, 
+      imageUrl: programH, 
     },
   ];
 
