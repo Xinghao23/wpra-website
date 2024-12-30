@@ -14,7 +14,9 @@ function Header() {
   return (
     <header className="header">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
+      <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
         <h1 className="site-name">Western Pacific Robotics Academy</h1>
       </div>
       <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>

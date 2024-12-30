@@ -38,7 +38,46 @@ const awardsDataHighStakes1 = {
     { title: 'Tournament Champion', team: "886R", members: ['Eddie, Laurence, Tina'] },
     { title: 'Build Award', team: "886R", members: ['Eddie, Laurence, Tina'] },
     // ... add more awards for this season as needed
-  ]
+  ],
+  "WPRA V5RC High Stakes Fall Qualifier": [
+    { title: 'Tournament Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Tournament Finalist', team: "886U", members: ['Andre, Daniel, Justin, Kendrick'] },
+    { title: 'Tournament Finalist', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Robot Skills Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Innovate Award', team: "886U", members: ['Andre, Daniel, Justin, Kendrick'] },
+    { title: 'Amaze Award', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Build Award', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    // ... add more awards for this season as needed
+  ],
+  "PYRS Salish Fall Qualifier": [
+    { title: 'Tournament Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Tournament Finalist', team: "886Z", members: ['Evan, Julianne, Sharon'] },
+    { title: 'Tournament Finalist', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    { title: 'Robot Skills Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Amaze Award', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Build Award', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    // ... add more awards for this season as needed
+  ],
+  "PYRS Heritage Woods Qualifier": [
+    { title: 'Excellence Award', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Tournament Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    // ... add more awards for this season as needed
+  ],
+  "Gord Trousdell Qualifier Middle School": [
+    { title: 'Excellence Award', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    { title: 'Tournament Finalist', team: "886R", members: ['Eddie, Laurence, Tina'] },
+    { title: 'Innovate Award', team: "886T", members: ['Ariel, Claire, Moses'] },
+    // ... add more awards for this season as needed
+  ],
+  "Gord Trousdell Qualifier High School": [
+    { title: 'Excellence Award', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Tournament Champion', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Robot Skills Champion', team: "886S", members: ['Aaron, Braden, Jimmy, Victoria'] },
+    { title: 'Robot Skills 2nd Place', team: "886Y", members: ['Alan, Ariel, Mo'] },
+    { title: 'Create Award', team: "886Z", members: ['Evan, Julianne, Sharon'] },
+    { title: 'Judges Award', team: "886W", members: ['Aaron, Ethan, Thomas'] },
+    // ... add more awards for this season as needed
+  ],
 
   // Add more awards here as needed
 }
@@ -125,10 +164,10 @@ const awardsDataOverUnder1 = {
     ],
     "WPRA Last Stan VRC Qualifier": [
       { title: 'Excellence Award', team: "886W", members: ['Aaron, Chares, Eddie, Thomas'] },
-      { title: 'Excellence Award', team: "886W", members: ['Aaron, Chares, Eddie, Thomas'] },
-      { title: 'Excellence Award', team: "604X", members: ['Alan, Ethan, Victoria'] },
-      { title: 'Excellence Award', team: "886W", members: ['Aaron, Chares, Eddie, Thomas'] },
-      { title: 'Excellence Award', team: "604X", members: ['Alan, Ethan, Victoria'] },
+      { title: 'Tournament Champion', team: "886W", members: ['Aaron, Chares, Eddie, Thomas'] },
+      { title: 'Tournament Champion', team: "604X", members: ['Alan, Ethan, Victoria'] },
+      { title: 'Robot Skills Champion', team: "886W", members: ['Aaron, Chares, Eddie, Thomas'] },
+      { title: 'Build Award', team: "604X", members: ['Alan, Ethan, Victoria'] },
       // ... add more awards for this season as needed
     ],
     "PYRS BC Mainland HS VRC Championship": [
