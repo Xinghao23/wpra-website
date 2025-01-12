@@ -9,6 +9,16 @@ import Charles from "../img/CharlesHS.JPG";
 import Sammy from "../img/SammyHS.JPG";
 import Ethan from "../img/EthanHS.JPG";
 
+const timelineData = [
+    { year: "2014", names: ["Nevin"] },
+    { year: "2015", names: ["Nevin"] },
+    { year: "2016", names: ["Xinghao"] },
+    { year: "2017", names: ["Xinghao", "Winson"] },
+    { year: "2018", names: ["Kenny"] },
+    { year: "2019", names: ["Kenny", "Sammy"] },
+    { year: "2020", names: ["Sammy"] },
+];
+
 const people = [
     { id: 1, 
       name: "Xinghao", 
@@ -63,24 +73,43 @@ const people = [
 const About = () => {
   return (
       <div className="container">
-          {/* First Row with 3 People */}
+          {/* Timeline Section */}
+          <div className="timeline-section">
+              <h2>UNBEATABLE COACHES EXPERIENCE</h2>
+              <h3>BC Provincial Champions:</h3>
+              <div className="timeline">
+                  {timelineData.map((item, index) => (
+                      <div key={index} className="timeline-wrapper">
+                          <div className="timeline-item">
+                              <div className="timeline-year">{item.year}</div>
+                          </div>
+                          <div className="timeline-coach">
+                              {item.names.map((name, idx) => (
+                                  <div key={idx}>{name}</div>
+                              ))}
+                          </div>
+                      </div>
+                  ))}
+              </div>
+          </div>
+
+          {/* About Our Staff Section */}
           <div className="row">
               {people.slice(0, 3).map(person => (
                   <div key={person.id} className="person-box">
                       <img src={person.photo} alt={person.name} className="photo" />
                       <div className="name">{person.name}</div>
-                      <div className="title">{person.title}</div> {/* Added title */}
+                      <div className="title">{person.title}</div>
                       <div className="description">{person.description}</div>
                   </div>
               ))}
           </div>
-          {/* Second Row with 4 People */}
           <div className="row">
               {people.slice(3, 7).map(person => (
                   <div key={person.id} className="person-box">
                       <img src={person.photo} alt={person.name} className="photo" />
                       <div className="name">{person.name}</div>
-                      <div className="title">{person.title}</div> {/* Added title */}
+                      <div className="title">{person.title}</div>
                       <div className="description">{person.description}</div>
                   </div>
               ))}
