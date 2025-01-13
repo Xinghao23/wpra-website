@@ -508,7 +508,7 @@ nav ul li a:hover {
 .timeline {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   align-items: flex-start;
 }
@@ -586,7 +586,7 @@ nav ul li a:hover {
 
 .person-box {
   width: 350px; /* Fixed width for uniform size */
-  min-height: 550px; /* Adjusted min-height to accommodate title */
+  min-height: 570px; /* Adjusted min-height to accommodate title */
   border: 1px solid #ddd;
   padding: 15px;
   text-align: center;
@@ -627,6 +627,7 @@ nav ul li a:hover {
   max-height: 4.2em; /* Limits height for approximately 3 lines of text */
   overflow: hide; /* Hides overflow text */
   display: -webkit-box; /* Required for line clamping */
+
 }
 /* Mobile View: Stacked Layout */
 @media (max-width: 768px) {
@@ -658,6 +659,29 @@ nav ul li a:hover {
     line-height: 1.4;
     margin-top: 10px; /* Ensures separation between sections */
     display: block; /* Text remains fully visible */
+  }
+  .timeline {
+    flex-wrap: wrap; /* Allows timeline items to wrap on smaller screens */
+    justify-content: center; /* Center items when wrapping */
+    gap: 20px; /* Adjust gap for better spacing */
+  }
+
+  .timeline-item {
+    width: 100px; /* Adjusts width for smaller screens */
+    padding: 8px 15px; /* Smaller padding for compact layout */
+  }
+
+  .timeline-coach {
+    font-size: 0.9em; /* Slightly smaller font for names */
+    margin-top: 50px; /* Adjusts spacing between arrow and name */
+  }
+
+  .timeline-section h2 {
+    font-size: 1.5em; /* Smaller headline font size */
+  }
+
+  .timeline-section h3 {
+    font-size: 1.2em; /* Smaller sub-headline font size */
   }
 }
 
