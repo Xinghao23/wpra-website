@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
+
 import sponsorshipPackage from "../documents/WPRA Sponsorship Package.pdf"; // Import Sponsorship PDF
 
 // Import sponsor logos
 import Anotek from "../img/anotek.png";
 
 const Sponsorship = () => {
+  const contactRef = useRef(null);
+
+  // Smooth scroll function
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="sponsorship-container">
       {/* Hero Section */}
@@ -17,7 +25,7 @@ const Sponsorship = () => {
           By becoming a sponsor, you contribute to cutting-edge robotics programs, advanced learning opportunities, and competitive team development. 
           Your generosity allows us to expand our reach and impact within the community.
         </p>
-        <button className="partner-btn">Become a Sponsor →</button>
+        <button className="partner-btn" onClick={scrollToContact}>Become a Sponsor →</button>
       </div>
 
       {/* Sponsor Grid Layout */}
@@ -32,6 +40,20 @@ const Sponsorship = () => {
       <div className="sponsorship-pdf">
         <h2 className="sponsorship-title">Sponsorship Package</h2>
         <iframe src={sponsorshipPackage} title="Sponsorship Package" className="pdf-viewer"></iframe>
+      </div>
+
+      {/* Contact Section */}
+      <div className="sponsorship-contact" ref={contactRef}>
+        <h2 className="contact-title">Get in Touch</h2>
+        <p className="contact-text">
+          For more information about sponsorship opportunities, please contact Xing at <b>sponsorWPRA@orionwpra.ca</b>.
+        </p>
+        <button 
+          className="contact-btn" 
+          onClick={() => window.location.href = "mailto:sponsorWPRA@orionwpra.ca"}
+        >
+          Contact Xing →
+        </button>
       </div>
     </div>
   );

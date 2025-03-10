@@ -1241,6 +1241,7 @@ nav ul li a:hover {
   height: 100px;
   max-width: 100%;
   object-fit: contain;
+
 }
 
 /* Sponsorship PDF */
@@ -1255,6 +1256,43 @@ nav ul li a:hover {
   height: 700px;
   border: none;
   box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Section */
+.sponsorship-contact {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* Contact Button */
+.contact-btn {
+  background: #ff4e50;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #e73c3c;
 }
 
 
