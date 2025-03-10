@@ -12,6 +12,7 @@ import Gallery from './components/Gallery';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost'; // Individual blog post component
 import './App.css';
+import Sponsorship from './components/Sponsorship';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/About" element={<About/>}/>
           <Route path="/AwardsPage" element={<AwardsPage/>}/>
           <Route path="/gallery" element={<Gallery />} /> {/* Gallery route */}
+          <Route path="/Sponsorship" element={<Sponsorship/>}/>
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
