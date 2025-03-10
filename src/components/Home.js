@@ -12,7 +12,7 @@ function Home() {
       </video>
       <div className="overlay"></div> {/* Overlay layer */}
       <div className="content">
-        <h1 className="main-heading">Western Pacific Robotics Academy</h1>
+        <h1 className="main-heading">Western Pacific Robotics Academy Society</h1>
         <p className="introduction-text">In today's ever-changing world, the next generation must be equipped with benefits of STEM education such as logic building, 
           problem-solving, interpreting essential information, and acquiring and reviewing evidence to make sound judgments. 
           We play a part in imparting those skills to your children by the help of skilled instructors and updated course content.</p>
