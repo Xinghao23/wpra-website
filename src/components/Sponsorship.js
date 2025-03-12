@@ -4,6 +4,7 @@ import sponsorshipPackage from "../documents/WPRA Sponsorship Package.pdf"; // I
 
 // Import sponsor logos
 import Anotek from "../img/anotek.png";
+import Polymere from "../img/Polymershapes.png";
 
 const Sponsorship = () => {
   const contactRef = useRef(null);
@@ -33,6 +34,9 @@ const Sponsorship = () => {
       <div className="sponsor-grid">
         <div className="sponsor-card">
           <img src={Anotek} alt="Anotek Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={Polymere} alt="PolymereShapes Sponsor" className="sponsor-logo" />
         </div>
       </div>
 
