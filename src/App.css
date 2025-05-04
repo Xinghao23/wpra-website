@@ -506,6 +506,22 @@ h1, h2, p {
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #ff3b1f;
+}
+
 
 .programs-logo {
   height: 50px;

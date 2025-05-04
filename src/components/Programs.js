@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import FloatingButton from '../components/FloatingButton';
 
-
 // Import images
 import IntroToVEX from "../img/DSC_0960.JPG";
 import EarlyLearningRobotics from "../img/EarlyLearning.JPG";
@@ -23,6 +22,11 @@ import Spanish from "../img/spanish.jpg";
 import English from "../img/english.jpg";
 import NovelStudy from "../img/novel.jpg";
 import SocialStudies from "../img/socialStudies.jpg";
+import ERSC from "../img/ERSC.png";
+import PL from "../img/PrivateLessons.png";
+import AL from "../img/adultClasses.png";
+import JL from "../img/juniorClasses.png";
+import SC from "../img/SeasonalCamp.png";
 
 const Programs = () => {
   const [selectedSection, setSelectedSection] = useState('robotics');
@@ -53,20 +57,58 @@ const Programs = () => {
     { id: 20, title: 'Social Studies', subtitle: 'For ages 15-18', description: 'Discover the history, geography, and cultures of the world through interactive learning.', imageUrl: SocialStudies },
   ];
 
-  const programsToShow = selectedSection === 'robotics' ? roboticsPrograms : academicPrograms;
+    const badmintonPrograms = [
+      {
+        id: 21,
+        title: 'Private Lessons',
+        subtitle: '1-1 Sessions',
+        description: 'Get individualized attention from professional coaches to rapidly improve your skills, technique, and game strategy in a customized training format.',
+        imageUrl: PL,
+        link: 'https://www.erscbadminton.ca/training-courses/private-lessons/private-lesson-rates'
+      },
+      {
+        id: 22,
+        title: 'Adult Classes',
+        subtitle: 'Adult Sessions',
+        description: 'Join our adult badminton program for skill development, fitness, and social play. Suitable for all levels—from casual players to competitive athletes.',
+        imageUrl: AL,
+        link: 'https://www.erscbadminton.ca/training-courses/adult-classes'
+      },
+      {
+        id: 23,
+        title: 'Junior Classes',
+        subtitle: 'Aged 10+',
+        description: 'Designed for youth athletes aiming to compete at a higher level. Includes technical training, footwork, match strategy, and tournament preparation.',
+        imageUrl: JL,
+        link: 'https://www.erscbadminton.ca/training-courses/junior-classes'
+      },
+      {
+        id: 24,
+        title: 'Seasonal Camp',
+        subtitle: 'Camps!',
+        description: 'Intensive, short-term training camps during school breaks. Great for skill-building, team bonding, and staying active during holidays.',
+        imageUrl: SC,
+        link: 'https://www.erscbadminton.ca/training-courses/seasonal-camp'
+      },
+    ];
+
+  const programsToShow =
+    selectedSection === 'robotics' ? roboticsPrograms :
+    selectedSection === 'zhuge' ? academicPrograms :
+    badmintonPrograms;
 
   return (
     <div className="programs-container">
       <div className="programs-header">
-  <img 
-    src={selectedSection === 'robotics' ? require('../img/WpraLogo.png') : require('../img/ZhugeLogo.jpg')} 
-    alt="Section Logo" 
-    className="programs-logo" 
-  />
-  <h1 className="programs-title">
-    {selectedSection === 'robotics' ? 'Our Robotics Programs' : 'Our Academic Programs x Zhuge Academy'}
-  </h1>
-</div>
+        <img 
+          src={selectedSection === 'robotics' ? require('../img/WpraLogo.png') : selectedSection === 'zhuge' ? require('../img/ZhugeLogo.jpg') : require('../img/ERSC.png')} 
+          alt="Section Logo" 
+          className="programs-logo" 
+        />
+        <h1 className="programs-title">
+          {selectedSection === 'robotics' ? 'Our Robotics Programs' : selectedSection === 'zhuge' ? 'Our Academic Programs x Zhuge Academy' : 'ERSC Badminton Program'}
+        </h1>
+      </div>
 
       <div className="program-toggle">
         <button 
@@ -75,18 +117,36 @@ const Programs = () => {
         <button 
           className={selectedSection === 'zhuge' ? 'toggle-btn active' : 'toggle-btn'} 
           onClick={() => setSelectedSection('zhuge')}>Zhuge Academy</button>
+        <button 
+          className={selectedSection === 'badminton' ? 'toggle-btn active' : 'toggle-btn'} 
+          onClick={() => setSelectedSection('badminton')}>ERSC Badminton</button>
       </div>
 
       <div className="programs-grid">
-        {programsToShow.map(program => (
-          <div className="program-card" key={program.id}>
-            <img src={program.imageUrl} alt={program.title} className="program-image" />
-            <h2>{program.title}</h2>
-            <p className="program-subtitle"><em>{program.subtitle}</em></p>
-            <p>{program.description}</p>
-          </div>
-        ))}
-      </div>
+  {programsToShow.map(program => (
+    <div className="program-card" key={program.id}>
+      <img src={program.imageUrl} alt={program.title} className="program-image" />
+      <h2>{program.title}</h2>
+      <p className="program-subtitle"><em>{program.subtitle}</em></p>
+      <p>{program.description}</p>
+
+      {/* Only show Learn More for ERSC */}
+      {selectedSection === 'badminton' && program.link && (
+  <a 
+    href={program.link}
+    className="learn-more-btn"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Learn More
+  </a>
+      
+      )}
+    </div>
+  ))}
+</div>
+
+
 
       <FloatingButton />
     </div>
