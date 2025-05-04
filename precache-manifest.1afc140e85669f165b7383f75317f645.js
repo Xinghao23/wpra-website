@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1d352a62039e5adbc91ad73e478891c",
+    "revision": "e78cfeaaaea71a5b85592175a68744fb",
     "url": "/index.html"
   },
   {
-    "revision": "b873e99431e71fd1f25e",
-    "url": "/static/css/main.60d5230b.chunk.css"
+    "revision": "dd70cd8df14428fe5011",
+    "url": "/static/css/main.3722417a.chunk.css"
   },
   {
-    "revision": "c36a58c0bcc564a1a5a2",
-    "url": "/static/js/2.980eee67.chunk.js"
+    "revision": "84ca4d6cbbbc3bf8afd5",
+    "url": "/static/js/2.09c8be34.chunk.js"
   },
   {
     "revision": "43420feec10fee2358de5e73a5abbb46",
-    "url": "/static/js/2.980eee67.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.09c8be34.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6d24afed82ba679d7992",
-    "url": "/static/js/3.9bfd9996.chunk.js"
+    "revision": "490b16cca4b7789648db",
+    "url": "/static/js/3.62cb35ee.chunk.js"
   },
   {
-    "revision": "b873e99431e71fd1f25e",
-    "url": "/static/js/main.3cf38299.chunk.js"
+    "revision": "dd70cd8df14428fe5011",
+    "url": "/static/js/main.4c12a693.chunk.js"
   },
   {
-    "revision": "484003c4c226623f58e7",
-    "url": "/static/js/runtime-main.8bddbfbf.js"
+    "revision": "9c913d8436bb3792efc7",
+    "url": "/static/js/runtime-main.4d316e29.js"
   },
   {
     "revision": "747dcb7bc2d2e99eb5d1981de8aabdda",
@@ -128,6 +128,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/DSC_0960.c7b0f7b7.JPG"
   },
   {
+    "revision": "f1d3e707eadc05953c8da82b3096295a",
+    "url": "/static/media/ERSC.f1d3e707.png"
+  },
+  {
     "revision": "3303e5942a0ac75179f0847996549e8f",
     "url": "/static/media/EarlyLearning.3303e594.JPG"
   },
@@ -172,6 +176,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Polymershapes.40b8f7f7.png"
   },
   {
+    "revision": "a7ef2199d02237666c6d2e4f336bd613",
+    "url": "/static/media/PrivateLessons.a7ef2199.png"
+  },
+  {
     "revision": "13576bf08d341b4aed1a202b05667764",
     "url": "/static/media/Proto_Logo.13576bf0.png"
   },
@@ -182,6 +190,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a21e4d6534a90c74c057056050f35e8c",
     "url": "/static/media/Science.a21e4d65.jpg"
+  },
+  {
+    "revision": "d299b0588957fdba769f6e18c4dca848",
+    "url": "/static/media/SeasonalCamp.d299b058.png"
   },
   {
     "revision": "b6869c1f04dd4cc95b797f38adaac230",
@@ -202,6 +214,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b8f06bce9c174b14842a8c0f196dc7d7",
     "url": "/static/media/ZhugeLogo.b8f06bce.jpg"
+  },
+  {
+    "revision": "1aa0ec7c35e9b695cec189af47a32731",
+    "url": "/static/media/adultClasses.1aa0ec7c.png"
   },
   {
     "revision": "49a349f4c2c5e124c438181fef5efeac",
@@ -230,6 +246,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ad53177981cd1bedc2e372f9d5b27cef",
     "url": "/static/media/french.ad531779.jpg"
+  },
+  {
+    "revision": "c45351d97a7409f58e842cc0e2432f48",
+    "url": "/static/media/juniorClasses.c45351d9.png"
   },
   {
     "revision": "2654bc15ee0784ff86c4c74ef8508e72",
