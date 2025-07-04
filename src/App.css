@@ -1346,7 +1346,8 @@ h1, h2, p {
 /* Sponsor Grid Layout */
 .sponsor-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* change to 4 if you want 4 per row */
+  grid-auto-rows: auto;
   gap: 30px;
   justify-content: center;
   align-items: center;

@@ -6,6 +6,9 @@ import sponsorshipPackage from "../documents/WPRA Sponsorship Package.pdf"; // I
 import Anotek from "../img/anotek.png";
 import Polymere from "../img/Polymershapes.png";
 import Proto from "../img/Proto_Logo.png";
+import SolidWorks from "../img/SolidWorksLogo.png";
+import AuntieEmily from "../img/AuntieEmilysKitchen.jpg";
+import Polymaker from "../img/PolymakerLogo.png";
 
 const Sponsorship = () => {
   const contactRef = useRef(null);
@@ -38,6 +41,15 @@ const Sponsorship = () => {
         </div>
         <div className="sponsor-card">
           <img src={Polymere} alt="PolymereShapes Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={Polymaker} alt="Proto Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={AuntieEmily} alt="AuntieEmily Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={SolidWorks} alt="SolidWorks Sponsor" className="sponsor-logo" />
         </div>
         <div className="sponsor-card">
           <img src={Proto} alt="Proto Sponsor" className="sponsor-logo" />
