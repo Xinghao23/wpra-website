@@ -9,7 +9,7 @@ import Anotek from "../img/anotek.png";
 import Polymere from "../img/Polymershapes.png";
 import Proto from "../img/Proto_Logo.png";
 import SolidWorks from "../img/SolidWorksLogo.png";
-import AuntieEmily from "../img/AuntieEmilysKitchen.jpg";
+import AuntieEmily from "../img/AuntieEmily.png";
 import Polymaker from "../img/PolymakerLogo.png";
 
 function Home() {
@@ -67,26 +67,38 @@ function Home() {
       {/* Sponsor Grid Layout */}
       <section className="sponsor-section">
       <h2 className="sponsorship-title-main">Our Valued Sponsors</h2>
-      <div className="sponsor-grid">
-        <div className="sponsor-card">
-          <img src={Anotek} alt="Anotek Sponsor" className="sponsor-logo" />
+       <div className="sponsor-grid-home">
+          <div className="sponsor-card-home">
+            <a href="https://www.anotekanodizing.com" target="_blank" rel="noopener noreferrer">
+              <img src={Anotek} alt="Anotek Sponsor" className="sponsor-logo-home" />
+            </a>
         </div>
-        <div className="sponsor-card">
-          <img src={Polymere} alt="PolymereShapes Sponsor" className="sponsor-logo" />
+        <div className="sponsor-card-home">
+          <a href="https://www.polymershapes.com" target="_blank" rel="noopener noreferrer">
+            <img src={Polymere} alt="PolymereShapes Sponsor" className="sponsor-logo-home" />
+          </a>
         </div>
-        <div className="sponsor-card">
-          <img src={Polymaker} alt="Proto Sponsor" className="sponsor-logo" />
+        <div className="sponsor-card-home">
+          <a href="https://www.polymaker.com" target="_blank" rel="noopener noreferrer">
+            <img src={Polymaker} alt="Polymaker Sponsor" className="sponsor-logo-home" />
+          </a>
         </div>
-        <div className="sponsor-card">
-          <img src={AuntieEmily} alt="AuntieEmily Sponsor" className="sponsor-logo" />
+        <div className="sponsor-card-home">
+          <a href="https://auntieemily.com/" target="_blank" rel="noopener noreferrer">
+            <img src={AuntieEmily} alt="AuntieEmily Sponsor" className="sponsor-logo-home" />
+          </a>
         </div>
-        <div className="sponsor-card">
-          <img src={SolidWorks} alt="SolidWorks Sponsor" className="sponsor-logo" />
+        <div className="sponsor-card-home">
+          <a href="https://www.solidworks.com" target="_blank" rel="noopener noreferrer">
+            <img src={SolidWorks} alt="SolidWorks Sponsor" className="sponsor-logo-home" />
+          </a>
         </div>
-        <div className="sponsor-card">
-          <img src={Proto} alt="Proto Sponsor" className="sponsor-logo" />
+        <div className="sponsor-card-home">
+          <a href="https://www.protocase.com" target="_blank" rel="noopener noreferrer">
+            <img src={Proto} alt="Proto Sponsor" className="sponsor-logo-home" />
+          </a>
         </div>
-      </div>
+        </div>
       </section>
     </div>
   );

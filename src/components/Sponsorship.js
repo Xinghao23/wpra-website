@@ -7,7 +7,7 @@ import Anotek from "../img/anotek.png";
 import Polymere from "../img/Polymershapes.png";
 import Proto from "../img/Proto_Logo.png";
 import SolidWorks from "../img/SolidWorksLogo.png";
-import AuntieEmily from "../img/AuntieEmilysKitchen.jpg";
+import AuntieEmily from "../img/AuntieEmily.png";
 import Polymaker from "../img/PolymakerLogo.png";
 
 const Sponsorship = () => {
