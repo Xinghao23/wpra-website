@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7500141ea12621e089b36082fd2ad763",
+    "revision": "d7ae24740167418e5932c71dff859baf",
     "url": "/index.html"
   },
   {
-    "revision": "c3e0bcacc30b6d2c04d6",
-    "url": "/static/css/main.2d240f7b.chunk.css"
+    "revision": "b7c59d8c3b9085bbea29",
+    "url": "/static/css/main.4c573d9a.chunk.css"
   },
   {
     "revision": "e9788541fef46f2008a6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.3037a6ed.chunk.js"
   },
   {
-    "revision": "c3e0bcacc30b6d2c04d6",
-    "url": "/static/js/main.8ee0c406.chunk.js"
+    "revision": "b7c59d8c3b9085bbea29",
+    "url": "/static/js/main.0d572c92.chunk.js"
   },
   {
     "revision": "cdd17905205b6caf0c92",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AMC.b57de4b4.jpg"
   },
   {
-    "revision": "35da4c678ee17738a807442b76c605b2",
-    "url": "/static/media/AuntieEmilysKitchen.35da4c67.jpg"
+    "revision": "8fd88b44a87380502db931befaf10ed4",
+    "url": "/static/media/AuntieEmily.8fd88b44.png"
   },
   {
     "revision": "4a8fbc864e24884466910da7187e7abe",
