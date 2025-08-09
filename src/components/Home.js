@@ -4,6 +4,14 @@ import backgroundVideo from '../video/BackgroundVideo.mp4';
 import { Link } from 'react-router-dom';
 import FloatingButton from '../components/FloatingButton';
 
+// Import sponsor logos
+import Anotek from "../img/anotek.png";
+import Polymere from "../img/Polymershapes.png";
+import Proto from "../img/Proto_Logo.png";
+import SolidWorks from "../img/SolidWorksLogo.png";
+import AuntieEmily from "../img/AuntieEmilysKitchen.jpg";
+import Polymaker from "../img/PolymakerLogo.png";
+
 function Home() {
   return (
     <div className="home-container">
@@ -55,6 +63,30 @@ function Home() {
             allowFullScreen>
           </iframe>
         </div>
+      </section>
+      {/* Sponsor Grid Layout */}
+      <section className="sponsor-section">
+      <h2 className="sponsorship-title-main">Our Valued Sponsors</h2>
+      <div className="sponsor-grid">
+        <div className="sponsor-card">
+          <img src={Anotek} alt="Anotek Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={Polymere} alt="PolymereShapes Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={Polymaker} alt="Proto Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={AuntieEmily} alt="AuntieEmily Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={SolidWorks} alt="SolidWorks Sponsor" className="sponsor-logo" />
+        </div>
+        <div className="sponsor-card">
+          <img src={Proto} alt="Proto Sponsor" className="sponsor-logo" />
+        </div>
+      </div>
       </section>
     </div>
   );

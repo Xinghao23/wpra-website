@@ -262,6 +262,19 @@ nav ul li a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/*for sponsorship section on home page*/
+
+.sponsor-section{
+  padding: 60px 20px; /* Padding around the section */
+  background-color: #202020; /* White background for contrast */
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  z-index: 1;
+  
+}
+
 /* Stats Section within Video Container */
 .stats-section {
   margin-top: 30px; /* Adds more space below the "Get Started" button */
