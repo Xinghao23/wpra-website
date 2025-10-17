@@ -4,7 +4,7 @@ import FloatingButton from '../components/FloatingButton';
 import Xinghao from "../img/XinghaoHS.JPG";
 import Nevin from "../img/NevinHS.JPG";
 import Winson from "../img/WinsonHS.JPG";
-import Kenny from "../img/KennyHS.JPG";
+import Kenneth from "../img/KennyHS.JPG";
 import Charles from "../img/CharlesHS.JPG";
 import Sammy from "../img/SammyHS.JPG";
 import Ethan from "../img/EthanHS.JPG";
@@ -14,8 +14,8 @@ const timelineData = [
     { year: "2015", names: ["Nevin"] },
     { year: "2016", names: ["Xinghao"] },
     { year: "2017", names: ["Xinghao", "Winson"] },
-    { year: "2018", names: ["Kenny"] },
-    { year: "2019", names: ["Kenny", "Sammy"] },
+    { year: "2018", names: ["Kenneth"] },
+    { year: "2019", names: ["Kenneth", "Sammy"] },
     { year: "2020", names: ["Sammy"] },
 ];
 
@@ -48,23 +48,23 @@ const people = [
 
     },
     { id: 5, 
-      name: "Kenny", 
-      photo: Kenny, 
-      title: "Coach",
-      description: "Kenny is a proud graduate of the Robosavages, the former world champion robotics team at Gladstone Secondary. He achieved success as the VEX Robotics BC Provincial Champion in 2018 and 2019, frequently earning Excellence and Tournament Champion awards during his competitive career, and qualifying for the World Championship. Currently, he is pursuing a Bachelor of Applied Science in Mechatronics Engineering at Simon Fraser University, where he combines his passion for robotics with advanced technical knowledge." 
+      name: "Kenneth", 
+      photo: Kenneth, 
+      title: "Intro Instructor",
+      description: "Kenneth is a proud graduate of the Robosavages, the former world champion robotics team at Gladstone Secondary. He achieved success as the VEX Robotics BC Provincial Champion in 2018 and 2019, frequently earning Excellence and Tournament Champion awards during his competitive career, and qualifying for the World Championship. Currently, he is pursuing a Bachelor of Applied Science in Mechatronics Engineering at Simon Fraser University, where he combines his passion for robotics with advanced technical knowledge." 
 
     },
     { id: 6, 
       name: "Sammy", 
       photo: Sammy, 
-      title: "Coach",
+      title: "Intro Instructor",
       description: "Sammy is a graduate of the Robosavages, the former world champion robotics team at Gladstone Secondary. He achieved notable success as the VEX Robotics BC Provincial Champion in 2019 and 2020, frequently winning Excellence and Tournament Champion awards during his competitive career and qualifying for the World Championship. Currently, he is pursuing a Bachelor of Applied Science in Mechatronics Engineering at Simon Fraser University, where he is deepening his knowledge and passion for robotics." 
 
     },
     { id: 7, 
       name: "Stanley", 
       photo: Ethan, 
-      title: "Coach",
+      title: "Intro Instructor",
       description: "Stanley is a graduate of the Robosavages, the former world champion robotics team at Gladstone Secondary. Stanley has been teaching for 4+ years in robotics, math, chess, and english. He is pursuing his Bachelor of Applied Science in Mechatronics Engineering at SFU.  " 
 
     },
