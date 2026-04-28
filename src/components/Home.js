@@ -62,6 +62,19 @@ function Home() {
             referrerPolicy="strict-origin-when-cross-origin" 
             allowFullScreen>
           </iframe>
+          <div className="youtube-video-group">
+            <h3 className="youtube-subtitle">2026-27 VEX V5 Robotics Competition Game: Override</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/68NxYIAzbkY?si=KMYDYFHsDsO_ejNI"
+              title="WPRA competition video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+            </iframe>
+          </div>
         </div>
       </section>
       {/* Sponsor Grid Layout */}

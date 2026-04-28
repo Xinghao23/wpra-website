@@ -255,6 +255,26 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+.youtube-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.youtube-video-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.youtube-subtitle {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
 .youtube-video iframe {
   max-width: 100%;
   width: 560px;
