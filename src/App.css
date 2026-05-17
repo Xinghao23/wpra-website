@@ -136,6 +136,102 @@ nav ul li a:hover {
 
 /* ---------HOME CONTAINER--------- */
 /* Home container styling */
+.champion-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 20px;
+}
+
+.champion-popup {
+  background: #242833;
+  color: white;
+  max-width: 520px;
+  width: 100%;
+  padding: 35px 30px;
+  border-radius: 18px;
+  text-align: center;
+  position: relative;
+  border: 2px solid #ff6347;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  animation: popupFade 0.3s ease;
+}
+
+.champion-popup h2 {
+  color: #ff6347;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.champion-popup p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.champion-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.champion-popup-btn {
+  margin-top: 25px;
+  background: #ff6347;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.champion-popup-btn:hover {
+  background: #ff4525;
+}
+.champion-popup-image {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px 0 20px 0;
+  border: 2px solid rgba(255,255,255,0.15);
+}
+
+@keyframes popupFade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .champion-popup {
+    padding: 28px 22px;
+  }
+
+  .champion-popup h2 {
+    font-size: 1.5rem;
+  }
+
+  .champion-popup p {
+    font-size: 1rem;
+  }
+}
 .home-container {
   width: 100%;
   overflow: hidden;

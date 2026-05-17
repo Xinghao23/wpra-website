@@ -1,5 +1,5 @@
 // src/components/Home.js
-import React from 'react';
+import React, { useState } from 'react';
 import backgroundVideo from '../video/BackgroundVideo.mp4';
 import { Link } from 'react-router-dom';
 import FloatingButton from '../components/FloatingButton';
@@ -12,9 +12,46 @@ import SolidWorks from "../img/SolidWorksLogo.png";
 import AuntieEmily from "../img/AuntieEmily.png";
 import Polymaker from "../img/PolymakerLogo.png";
 
+// Import imgs 
+import ProvincialsPhoto from "../img/provincialChampion2026.jpg"
+
 function Home() {
+    const [showPopup, setShowPopup] = useState(true);
   return (
     <div className="home-container">
+            {showPopup && (
+        <div className="champion-popup-overlay">
+          <div className="champion-popup">
+
+            <button
+              className="champion-popup-close"
+              onClick={() => setShowPopup(false)}
+            >
+              ×
+            </button>
+
+            <h2>🏆 2026 Provincial Champions!</h2>
+            <img
+              src={ProvincialsPhoto}
+               alt="2025-2026 Provincial Champions"
+                className="champion-popup-image"
+/>
+
+            <p>
+              WPRA is proud to announce that we are the
+              <strong> 2025–2026 High School and Middle School Provincial Champions!</strong>
+            </p>
+
+            <button
+              className="champion-popup-btn"
+              onClick={() => setShowPopup(false)}
+            >
+              Celebrate 🎉
+            </button>
+
+          </div>
+        </div>
+      )}
       <video autoPlay muted loop className="background-video">
         <source src={backgroundVideo} type="video/mp4" />
       </video>

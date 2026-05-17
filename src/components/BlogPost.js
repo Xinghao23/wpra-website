@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import "../BlogPost.css";
-
+import ProvincialsPhoto from "../img/provincialChampion2026.jpg"
+import msProvincials from "../img/msChamps2026.jpg"
 const blogContent = {
     "richmond-robotics-champions": {
         title: "Richmond Robotics Students Crowned Middle, High School Champions",
@@ -86,6 +87,96 @@ const blogContent = {
             </p>
         `,
         image: "https://scontent.fyvr1-1.fna.fbcdn.net/v/t39.30808-6/464634752_445584945218357_926781972541972887_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_ohc=X-F7tO7VWD0Q7kNvgGYygSv&_nc_zt=23&_nc_ht=scontent.fyvr1-1.fna&_nc_gid=AJGhL3Dbn2K5Jx8OdqHOi93&oh=00_AYD61qrjm9F9uXRoQCYQiVjfzPDTQiZ0MAq0vk-9Ll6l7A&oe=674CB3E9", // Replace this with an actual image URL related to the event
+    },
+    "high-school-provincials-champions": {
+        title: "WPRA Crowned 2025–2026 High School Provincial Champions",
+    date: "March 2026",
+    content: `
+        <p>
+            Western Pacific Robotics Academy (WPRA) proudly celebrates an unforgettable achievement at the 2025–2026 VEX V5 Robotics Competition High School Provincial Championships.
+        </p>
+
+        <p>
+            Team <strong>886S</strong> and Team <strong>886Y</strong> delivered an outstanding performance throughout the tournament, ultimately forming the all-WPRA alliance that would go on to claim the Provincial Championship title.
+        </p>
+
+        <p>
+            After qualification matches concluded, <strong>886S selected 886Y</strong> as their alliance partner for the elimination rounds. Combining strategic gameplay, strong teamwork, and consistent robot performance, the WPRA alliance battled through intense playoff matches and advanced all the way to the Finals.
+        </p>
+
+        <p>
+            In the championship series, the alliance showcased exceptional driving, autonomous consistency, and teamwork under pressure, securing the victory and officially earning the title of <strong>2025–2026 High School Provincial Champions</strong>.
+        </p>
+
+        <p>
+            <strong>Tournament Highlights:</strong>
+        </p>
+
+        <ul>
+            <li>886S selected 886Y to form a full WPRA elimination alliance</li>
+            <li>Advanced undefeated through multiple elimination rounds</li>
+            <li>Won the Provincial Championship Finals</li>
+            <li>Demonstrated elite teamwork, strategy, and engineering excellence</li>
+        </ul>
+
+        <p>
+            This achievement reflects the countless hours of dedication, design iteration, programming, teamwork, and perseverance demonstrated by both teams throughout the season.
+        </p>
+
+        <p>
+            WPRA is incredibly proud of Team 886S and Team 886Y for representing the academy with professionalism, resilience, and competitive excellence on the provincial stage.
+        </p>
+
+        <p>
+            <strong>Congratulations to our 2025–2026 High School Provincial Champions!</strong>
+        </p>
+    `,
+    image: ProvincialsPhoto,
+    },
+    "middle-school-provincials-champions": {
+    title: "WPRA Wins 2025–2026 Middle School Provincial Championship",
+    date: "March 2026",
+    content: `
+        <p>
+            Western Pacific Robotics Academy (WPRA) is proud to celebrate another incredible milestone at the 2025–2026 VEX V5 Robotics Competition Middle School Provincial Championships.
+        </p>
+
+        <p>
+            Team <strong>886M</strong> delivered an outstanding performance throughout the event, demonstrating consistency, teamwork, and competitive excellence against the top middle school teams in the province.
+        </p>
+
+        <p>
+            Heading into the elimination rounds, Team <strong>886M</strong> formed an alliance with Team <strong>9568V</strong>. Together, the alliance showcased exceptional communication, strategy, and resilience as they battled through intense playoff matches on the road to the Finals.
+        </p>
+
+        <p>
+            In the championship matches, the alliance rose to the occasion under pressure and secured the victory, officially earning the title of <strong>2025–2026 Middle School Provincial Champions</strong>.
+        </p>
+
+        <p>
+            <strong>Tournament Highlights:</strong>
+        </p>
+
+        <ul>
+            <li>886M advanced through highly competitive qualification matches</li>
+            <li>Formed a strong elimination alliance with 9568V</li>
+            <li>Demonstrated exceptional teamwork and match strategy</li>
+            <li>Won the Middle School Provincial Championship Finals</li>
+        </ul>
+
+        <p>
+            WPRA would like to extend a special thank you to Team <strong>9568V</strong> for being incredible alliance partners throughout the elimination rounds. Their teamwork, sportsmanship, and competitive spirit played a major role in this unforgettable achievement.
+        </p>
+
+        <p>
+            This victory represents the hard work, dedication, and passion shown by the students, coaches, mentors, and families who supported the team throughout the season.
+        </p>
+
+        <p>
+            <strong>Congratulations to Team 886M and alliance partner 9568V on becoming the 2025–2026 Middle School Provincial Champions!</strong>
+        </p>
+    `,
+    image: msProvincials,
     },
 };
 
